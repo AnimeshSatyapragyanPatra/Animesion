@@ -1,0 +1,76 @@
+/* style.css */
+
+/* Smooth transitions for the whole page */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom body font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation links */
+nav a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ec4899; /* Tailwind pink-500 */
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Buttons (if any) */
+button {
+  background: linear-gradient(to right, #7e22ce, #db2777);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #a855f7, #f43f5e);
+}
+
+/* Image styling */
+img {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* Section spacing on smaller screens */
+@media (max-width: 768px) {
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Footer text */
+footer p {
+  color: #d1d5db; /* Tailwind gray-300 */
+}
