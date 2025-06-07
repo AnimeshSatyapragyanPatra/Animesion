@@ -3,80 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Animesion</title>
-  <!-- Tailwind CDN -->
+  <title>Animesion - Home</title>
+  <!-- Roboto font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <!-- Your custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(90deg, #9f7aea, #f43f5e, #ef4444);
+      color: white;
+    }
+    nav a {
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      color: #facc15; /* yellow-400 */
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
-  <header class="text-center py-10">
-    <h1 class="text-5xl font-extrabold">Animesion</h1>
-    <p class="mt-4 text-xl">By Animesh Satyapragyan Patra</p>
-    <img src="Photo.jpg" alt="Animesh Photo" class="mx-auto mt-6 w-40 h-40 object-cover rounded-full border-4 border-white" />
+<body class="min-h-screen flex flex-col">
+  <header class="text-center py-12" data-aos="fade-down">
+    <h1 class="text-6xl font-extrabold tracking-wide">Animesion</h1>
+    <p class="mt-4 text-xl font-semibold">By Animesh Satyapragyan Patra</p>
+    <img
+      src="Photo.jpg"
+      alt="Animesh Photo"
+      class="mx-auto mt-8 w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
+      data-aos="zoom-in"
+    />
   </header>
 
-  <nav class="flex justify-center space-x-10 bg-white text-black py-4 font-semibold">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#contact">Contact</a>
+  <nav class="flex justify-center space-x-12 bg-white bg-opacity-90 text-black py-5 font-semibold sticky top-0 z-50" data-aos="fade-up">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="#contact" class="cursor-pointer">Contact</a>
   </nav>
 
-  <section id="home" class="text-center py-16 px-6">
-    <h2 class="text-4xl font-bold mb-4">Welcome to Animesion</h2>
-    <p class="text-lg">
-      Explore the journey, projects, and achievements of a passionate coder, developer, speaker, and
-      leader.
+  <main class="flex-grow text-center px-6 py-20 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="text-5xl font-bold mb-6 drop-shadow-lg">Welcome to Animesion</h2>
+    <p class="text-xl max-w-3xl mx-auto leading-relaxed">
+      Explore the journey, projects, and achievements of a passionate coder, developer, speaker, and leader.
     </p>
-  </section>
+  </main>
 
-  <section id="about" class="bg-white text-black py-16 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
-    <p class="text-lg max-w-3xl mx-auto">
-      I’m Animesh Satyapragyan Patra, currently pursuing B.Tech in CSE at NIT Durgapur. With strong
-      skills in C++, Data Structures, iOS development and public speaking, I’m passionate about
-      solving real-world problems through tech and communication. I lead student bodies, organize
-      events, and constantly aim to grow through experience and learning.
+  <footer
+    id="contact"
+    class="bg-black bg-opacity-70 text-white py-8 text-center text-lg"
+    data-aos="fade-up"
+    data-aos-delay="300"
+  >
+    <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+    <p><strong>Email:</strong> animeshsatyapragyanpatra@gmail.com</p>
+    <p><strong>Phone / WhatsApp:</strong> +91 9337269060</p>
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/animesh-satyapragyan-patra-0a6218242/" target="_blank" class="text-yellow-400 underline">View Profile</a>
     </p>
-  </section>
-
-  <section id="achievements" class="py-16 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">Achievements</h2>
-    <ul class="list-disc max-w-3xl mx-auto space-y-4 text-lg">
-      <li>City Rank 1 in SOF Cyber Olympiad (10th Grade)</li>
-      <li>Developer of iOS Xylophone App (Swift, iOS 18)</li>
-      <li>Web Developer & Alumni Outreach Coordinator - CSS Club, NIT Durgapur</li>
-      <li>Public Speaker & Event Host - Radio Nitroz, NIT Durgapur</li>
-      <li>Organizer of Hackathons, Persona Workshops, WaveCraze Fest</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="bg-white text-black py-16 px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">Contact</h2>
-    <div class="max-w-xl mx-auto text-lg space-y-4">
-      <p><strong>Email:</strong> animeshsatyapragyanpatra@gmail.com</p>
-      <p><strong>Phone / WhatsApp:</strong> +91 9337269060</p>
-      <p>
-        <strong>LinkedIn:</strong>
-        <a
-          href="https://www.linkedin.com/in/animesh-satyapragyan-patra-0a6218242/"
-          class="text-blue-600"
-          >View Profile</a
-        >
-      </p>
-      <p>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/AnimeshSatyapragyanPatra" class="text-blue-600">View Repositories</a>
-      </p>
-    </div>
-  </section>
-
-  <footer class="text-center py-6 text-sm bg-black bg-opacity-60">
-    <p>© 2025 Animesion | Designed by Animesh Satyapragyan Patra</p>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/AnimeshSatyapragyanPatra" target="_blank" class="text-yellow-400 underline">View Repositories</a>
+    </p>
+    <p class="mt-4 text-sm opacity-70">© 2025 Animesion | Designed by Animesh Satyapragyan Patra</p>
   </footer>
 
-  <!-- Your custom JavaScript -->
-  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 </body>
 </html>
